@@ -1,0 +1,6 @@
+{
+  "appId": "com.imane.architecture",
+  "appName": "Imane Architecture",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
