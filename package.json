@@ -1,0 +1,15 @@
+{
+  "name": "imane-architecture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Imane Architecture - AI Architecture Assistant",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "vite": "6.1.0",
+    "lucide": "0.468.0"
+  },
+  "devDependencies": {}
+}
