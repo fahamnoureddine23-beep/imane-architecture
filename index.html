@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Imane Architecture</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+      <div class="brand">IMANE <span>ARCHITECTURE</span></div>
+    </header>
+
+    <div id="overlay"></div>
+
+    <aside id="sidebar" class="sidebar">
+      <h2>IMANE ARCHITECTURE</h2>
+
+      <button class="nav active" data-page="home">🏛️ Accueil</button>
+      <button class="nav" data-page="assistant">🧠 Assistant IA</button>
+      <button class="nav" data-page="research">📚 Recherche académique</button>
+      <button class="nav" data-page="images">🎨 Génération d'images</button>
+      <button class="nav" data-page="plans">📐 Analyse des plans</button>
+      <button class="nav" data-page="documents">📄 Documents PDF</button>
+      <button class="nav" data-page="projects">🏗️ Mes projets</button>
+      <button class="nav" data-page="settings">⚙️ Paramètres</button>
+
+      <div class="signature">𝓜𝔂 𝓱𝓮𝓪𝓻𝓽♥</div>
+    </aside>
+
+    <main id="content">
+      <section class="page" id="home">
+        <div class="welcome">
+          <p>BIENVENUE</p>
+          <h1>Imane Architecture</h1>
+          <p>Votre assistant intelligent en architecture.</p>
+        </div>
+
+        <h2>Vos outils</h2>
+        <div class="tools">
+          <button class="tool" data-page="assistant">🧠<br>Assistant IA</button>
+          <button class="tool" data-page="research">📚<br>Recherche</button>
+          <button class="tool" data-page="images">🎨<br>Images</button>
+          <button class="tool" data-page="plans">📐<br>Plans</button>
+          <button class="tool" data-page="documents">📄<br>PDF</button>
+          <button class="tool" data-page="projects">🏗️<br>Projets</button>
+        </div>
+      </section>
+
+      <section class="page hidden" id="assistant">
+        <h1>Assistant IA</h1>
+        <p>Posez vos questions en architecture.</p>
+        <textarea placeholder="Écrivez votre question..."></textarea>
+        <button class="primary">Envoyer</button>
+        <p class="notice">Connexion à l'assistant IA à ajouter.</p>
+      </section>
+
+      <section class="page hidden" id="research">
+        <h1>Recherche académique</h1>
+        <p>Préparez vos recherches et trouvez des références scientifiques.</p>
+        <input placeholder="Sujet de recherche...">
+        <button class="primary">Rechercher</button>
+        <p class="notice">Moteur de recherche et citations à connecter.</p>
+      </section>
+
+      <section class="page hidden" id="images">
+        <h1>Génération d'images</h1>
+        <p>Imaginez votre prochain projet architectural.</p>
+        <textarea placeholder="Décrivez le bâtiment souhaité..."></textarea>
+        <button class="primary">Créer une image</button>
+        <p class="notice">Service de génération d'images à connecter.</p>
+      </section>
+
+      <section class="page hidden" id="plans">
+        <h1>Analyse des plans</h1>
+        <p>Préparez un plan pour une future analyse.</p>
+        <input type="file" accept="image/*,.pdf">
+        <button class="primary">Analyser</button>
+        <p class="notice">Module d'analyse à connecter.</p>
+      </section>
+
+      <section class="page hidden" id="documents">
+        <h1>Documents PDF</h1>
+        <input type="file" accept=".pdf">
+        <p class="notice">Lecture et résumé des documents à connecter.</p>
+      </section>
+
+      <section class="page hidden" id="projects">
+        <h1>Mes projets</h1>
+        <p>Votre espace personnel de projets architecturaux.</p>
+      </section>
+
+      <section class="page hidden" id="settings">
+        <h1>Paramètres</h1>
+        <p>Imane Architecture • Version 1.0</p>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
